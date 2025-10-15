@@ -40,7 +40,7 @@ jobs:
             msvc_toolset_version: '14.29'
             msvc_platform_toolset: 'v142'
             cmake_version: '~3.24'
-        runs-on: [self-hosted, windows]
+        runs-on: DESKTOP-6TC9AUH
  
     Windows-Asset:
         needs: Windows-Profile
@@ -53,7 +53,7 @@ jobs:
             msvc_toolset_version: '14.29'
             msvc_platform_toolset: 'v142'
             cmake_version: '~3.24'
-        runs-on: [self-hosted, windows]
+        runs-on: DESKTOP-6TC9AUH
  
     Windows-Test:
         needs: Windows-Asset
@@ -66,7 +66,7 @@ jobs:
             msvc_toolset_version: '14.29'
             msvc_platform_toolset: 'v142'
             cmake_version: '~3.24'
-        runs-on: [self-hosted, windows]
+        runs-on: DESKTOP-6TC9AUH
  
     Windows-Release:
         uses: ./.github/workflows/windows-build.yml
@@ -79,5 +79,4 @@ jobs:
             msvc_toolset_version: '14.29'
             msvc_platform_toolset: 'v142'
             cmake_version: '~3.24'
-        runs-on: [self-hosted, windows]
-Adv
+        runs-on: DESKTOP-6TC9AUH
